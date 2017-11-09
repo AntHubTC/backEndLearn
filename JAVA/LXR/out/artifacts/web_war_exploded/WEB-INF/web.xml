@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+    <servlet>
+        <servlet-name>qrcodeLxr</servlet-name>
+        <servlet-class>com.tc.lxr.QrcodeLxrServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>qrcodeLxr</servlet-name>
+        <url-pattern>/lxr/getQrcode</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>com.tc.listener.httpSessionListenerHandler</listener-class>
+    </listener>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+</web-app>

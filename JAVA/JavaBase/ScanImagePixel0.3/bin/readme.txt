@@ -1,0 +1,1 @@
+ÒıÈë private List<int[]> pos= new ArrayList<int[]>();

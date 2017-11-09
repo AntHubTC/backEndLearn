@@ -1,0 +1,12 @@
+1000:ÄşÀö¾ê:1234:13810381038:ninglj@tarena.com.cn
+# ²âÊÔÓÃµÄÃÜÂëÊÇ:1234
+1001:Áõ²ÔËÉ:1234:13810381038:liucs@tarena.com.cn
+1002:ÕÅÈı:1234:13810381038:zhangsan@tarena.com.cn
+1003:ÀîËÄ:1234:13810381038:lisi@tarena.com.cn
+
+1004:ÍõÎå:1234:13810381038:wangwu@tarena.com.cn
+1005:ÕÔÁù:1234:13810381038:zhaoliu@tarena.com.cn
+
+1006:ÖÓÁù:1234:109379234324:zhongliu@tarena.com
+1007:ÁõÆß:1234:13612345678:liuqi@tarena.com.cn
+

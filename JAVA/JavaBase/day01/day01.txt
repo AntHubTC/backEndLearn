@@ -1,0 +1,33 @@
+FTP:192.168.20.210
+id:dnjavasx(达内java实训)
+
+1.工程->包->类->属性
+  www.qq.com
+  com.qq.项目名.具体功能包
+  类:驼峰原则,见名知意
+
+2.JDK java 开发包(xmind)
+  JRE java运行环境
+
+3.swing简介
+  java提供的界面绘制工具,
+  2007年久不再更新
+ a.swing图形绘制有三种方式:
+   在main方法中定义JFrame对象
+   将JFrame定义为类的一个属性
+   将类作为JFrame的子类
+4.异常:ERROR EXCEPTION
+
+异常处理关键字:try catch 
+	       finally throw throws
+
+5.java数据类型
+  char boolean
+  byte short int long float double
+
+
+
+
+
+
+

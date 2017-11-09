@@ -1,0 +1,46 @@
+HashMap遍历方式
+1.keyset
+2.values
+3.entryset
+
+更新题目功能:
+1.在Service.start方法里,增加调用创建试卷和更新视图的方法
+paper = pojoContext.createPaper();
+examFrame.updateViewQuestion(paper.get(0));
+2.
+public List<Question> createPaper() {
+	List<Question> paper = new ArrayList<Question>();
+	Set<Integer> set = questions.keySet();
+	Iterator<Integer> it = set.iterator();
+	Random ran = new Random();
+	while(it.hasNext()){
+		int key = it.next();
+		List<Question> list = questions.get(key);
+		Question q1 = 
+		list.remove(ran.nextInt(list.size()));
+		Question q2 = 
+		list.remove(ran.nextInt(list.size()));
+		paper.add(q1);
+		paper.add(q2);
+	}
+	return paper;
+}
+
+3.
+public void updateViewQuestion(Question q) {
+	StringBuffer sb = new StringBuffer();
+	sb.append(q.getTitle()+"\n");
+	for (int i = 0; i < 4; i++) {
+		sb.append((char)(i+65)+"."+q.getOptions().get(i)+"\n");
+	}
+	question.setText(sb.toString());
+}
+
+4.设置题目JTextArea的属性
+question.setEditable(false);
+question.setLineWrap(true);
+
+
+
+
+

@@ -1,0 +1,38 @@
+将笛卡尔坐标系（0,0）点移动到myTank处
+int x = x2 - x1;//oX,oY坐标原点移动
+int y = y2 - y1;
+float angle = 0;
+
+if(x == 0 )
+{
+	if(y2 >= y1)
+	{
+		angle=90;
+	}
+	else
+	{
+		angle=-90;
+	}
+}
+/*
+else if(y == 0)
+{
+	if(x2 >= x1)
+	{
+		angle=0;
+	}
+	else
+	{
+		angle=180;
+	}
+}
+*/
+else
+{
+	angle	 = Math.arctan(y/x);//得到方向//cot()
+}
+
+System.out.println(angle+"");
+
+angle = Math.floor(angle/45);
+
